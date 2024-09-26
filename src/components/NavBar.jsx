@@ -5,7 +5,7 @@ export default function NavBar() {
   return (
     <nav className="navbar">
       <div>
-        <h1>Puppy Bowl</h1>
+        <h2>Puppy Bowl</h2>
       </div>
       <ul className="navbar-links">
         <li><Link to='/'>Home</Link></li>
