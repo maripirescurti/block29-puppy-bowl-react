@@ -31,7 +31,9 @@ export default function SinglePlayer() {
     <div className="single-player-container">
       <h2>{player.name}</h2>
       <img src={player.imageUrl} alt={player.name} className="single-player-image" />
-      <p>Breed: {player.breed}</p>
+      <p><strong>Breed:</strong> {player.breed}</p>
+      <p><strong>ID:</strong> {player.id}</p>
+      <p><strong>Status:</strong> {player.status}</p>
       <button onClick={handleDelete}>Delete Player</button>
     </div>  
   );

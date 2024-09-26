@@ -7,11 +7,12 @@
 
 .players-container {
   padding: 20px;
+  text-align: center;
 }
 
 .players-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minimax(200px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
@@ -26,7 +27,7 @@
 
 .player-card:hover {
   transform:  scale(1.05);
-  box-shadow: 0 4px 8px rgb(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 .player-card h4 {
@@ -78,3 +79,52 @@
   border-radius: 5px;
   font-size: 16px;
 }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4A90E2;
+  color: white;
+  padding: 5px 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand h1 {
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.navbar-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  margin-left: 20px;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: background-color 0.3s;
+}
+
+.navbar-links a:hover {
+  background-color: #3b7bbf;
+  border-radius: 4px;
+}
+
+/* body {
+  margin: 0;
+  padding-top:  70px;
+} */
